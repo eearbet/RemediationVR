@@ -5,19 +5,23 @@ using UnityEngine.UI;
 
 public class beatBoxScoreUpdater : MonoBehaviour
 {
-    public static int leftScoreHit = 0;
-    public static int leftScoreTotal = 0;
-    public Text leftEndScoreFraction;
+   // public static int leftScoreHit = 0;
+   // public static int leftScoreTotal = 0;
+   // public static Text LeftScore;
 
     public static int rightScoreHit = 0;
     public static int rightScoreTotal = 0;
-    public Text rightEndScoreFraction;
-
+    public static Text RightScore;
+    void Start()
+    {
+    //    LeftScore = GetComponent<Text>();
+        RightScore = GetComponent<Text>();
+    }
     // Update is called once per frame
     void Update()
     {
-        leftEndScoreFraction.text = leftScoreHit.ToString() + " / " + leftScoreTotal.ToString();
+    //    LeftScore.text = leftScoreHit.ToString() + " / " + leftScoreTotal.ToString();
 
-        rightEndScoreFraction.text = rightScoreHit.ToString() + " / " + rightScoreTotal.ToString();
+        RightScore.text = rightScoreHit.ToString() + " / " + rightScoreTotal.ToString();
     }
 }

@@ -7,13 +7,14 @@ public class pickNewEasySongGloveButton : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "leftGloveMeshCollider")
+        if ((other.gameObject.name == "leftGloveMeshCollider") || (other.gameObject.name == "rightGloveMeshCollider"))
         {
-            SceneManager.LoadScene("EasySongSelection");
-        }
-        else if (other.gameObject.name == "rightGloveMeshCollider")
-        {
-            SceneManager.LoadScene("EasySongSelection");
+         //   beatBoxScoreUpdater.leftScoreHit = 0;
+         //   beatBoxScoreUpdater.leftScoreTotal = 0;
+            beatBoxScoreUpdater.rightScoreHit = 0;
+            beatBoxScoreUpdater.rightScoreTotal = 0;
+
+            SceneManager.LoadScene("beatBoxEasySongSelection");
         }
     }
 }

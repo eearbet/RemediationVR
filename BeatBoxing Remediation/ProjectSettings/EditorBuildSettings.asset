@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/My Stuff/Scenes/mainMenuGameSelection.unity
     guid: c4331e7337a641d43a02ec2bee2438c5
   - enabled: 1
-    path: Assets/My Stuff/Scenes/Song_3_Easy.unity
+    path: Assets/My Stuff/Scenes/Song_3_Easy_Standing.unity
     guid: 88ee5267c29bab14198abae930f2a52c
   - enabled: 1
     path: Assets/My Stuff/Scenes/beatBoxInstructions.unity
@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/My Stuff/Scenes/beatBoxFinalScore.unity
     guid: 0170d27f557a79b4b89225e31a82aeb5
+  - enabled: 1
+    path: Assets/My Stuff/Scenes/Song_3_Easy_Sitting.unity
+    guid: a8817991cf37ffb4c962a0e5ec8d1058
+  - enabled: 1
+    path: Assets/My Stuff/Scenes/beatBoxEasySeatingVsStanding.unity
+    guid: 03fb167195c9e0e44998f42d146cab6f
   m_configObjects: {}

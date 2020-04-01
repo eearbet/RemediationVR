@@ -16,19 +16,25 @@ public class blueBlockMove : MonoBehaviour
         if ((collision.gameObject.name == "backWallCounter") || (collision.gameObject.name == "PodiumItself"))
         {
             Debug.Log("blue block made it past!");
-            beatBoxScoreUpdater.leftScoreTotal++;
+            //beatBoxScoreUpdater.leftScoreTotal++;
+            leftScoreUpdater.leftScoreTotal++;
+
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.name == "leftGloveMeshCollider")
         {
-            beatBoxScoreUpdater.leftScoreHit++;
-            beatBoxScoreUpdater.leftScoreTotal++;
+           // beatBoxScoreUpdater.leftScoreHit++;
+          //  beatBoxScoreUpdater.leftScoreTotal++;
+            leftScoreUpdater.leftScoreHit++;
+            leftScoreUpdater.leftScoreTotal++;
             Debug.Log("blue block destroied");
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.name == "rightGloveMeshCollider")
         {
-            beatBoxScoreUpdater.leftScoreTotal++;
+            //beatBoxScoreUpdater.leftScoreTotal++;
+            leftScoreUpdater.leftScoreTotal++;
+
             Debug.Log("Wrong Hand!");
             Destroy(this.gameObject);
         }

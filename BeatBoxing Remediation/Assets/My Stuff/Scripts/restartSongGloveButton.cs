@@ -11,8 +11,8 @@ public class restartSongGloveButton : MonoBehaviour
 
         if ( (other.gameObject.name == "leftGloveMeshCollider") || (other.gameObject.name == "rightGloveMeshCollider"))
         {
-            beatBoxScoreUpdater.leftScoreHit = 0;
-            beatBoxScoreUpdater.leftScoreTotal = 0;
+           // beatBoxScoreUpdater.leftScoreHit = 0;
+          //  beatBoxScoreUpdater.leftScoreTotal = 0;
             beatBoxScoreUpdater.rightScoreHit = 0;
             beatBoxScoreUpdater.rightScoreTotal = 0;
 

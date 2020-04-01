@@ -32,6 +32,8 @@ public class beginAndEndSong : MonoBehaviour
 
         if (timePassed > startTime)
         {
+           // SceneManager.LoadScene("beatBoxFinalScore");
+
             if (turnedOnPreviously == false)
             {
                 if (!myAudioSource.isPlaying)
@@ -47,7 +49,7 @@ public class beginAndEndSong : MonoBehaviour
                 {
                     // this means end of song so go to scoreboard
                     // this needs to send you to the scoreboard scene once I make it
-                    SceneManager.LoadScene("beatBoxEasySongSelection");
+                    SceneManager.LoadScene("beatBoxFinalScore");
                 }
             }
         }

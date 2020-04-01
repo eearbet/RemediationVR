@@ -15,8 +15,8 @@ public class redBlockMove : MonoBehaviour
     {
         if ((collision.gameObject.name == "backWallCounter") || (collision.gameObject.name == "PodiumItself"))
         {
-            beatBoxScoreUpdater.rightScoreTotal++;
             Debug.Log("red block made it past!");
+            beatBoxScoreUpdater.rightScoreTotal++;
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.name == "rightGloveMeshCollider")
